@@ -4,6 +4,10 @@ author: "Younggook Oh"
 date: "10/24/2017"
 output: html_document
 ---
+# Load Packages
+```{r load packages}
+library("ggplot2")
+```
 
 # Load in data
 ```{r load-Data}
@@ -13,5 +17,10 @@ head(data)
 ```
 # Plot Data
 ```{r plot-GCData}
-colnames(data)[12] <- "percent.GC" #rename GC
+#rename GC
+colnames(data)[12] <- "percent.GC"
+#bin data into 5
+data$GC.binned <- cut(data$percent.GC, 5)
+#plot
+ggplot(data) + geom_bar(aes(x = GC.binned))
 ```
