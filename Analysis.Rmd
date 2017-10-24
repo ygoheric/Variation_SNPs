@@ -1,0 +1,12 @@
+---
+title: "VariationSNPsAnalysis"
+author: "Younggook Oh"
+date: "10/24/2017"
+output: html_document
+---
+
+# Load in data
+
+# View Data
+
+# Plot Data
