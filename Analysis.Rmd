@@ -6,7 +6,15 @@ output: html_document
 ---
 
 # Load in data
-
+```{r load-Data}
+data <- read.csv("Data/Dataset_S1.txt")
+head(data)
+```
 # View Data
+```{r view-Data}
 
+```
 # Plot Data
+```{r plot-Data}
+
+```
