@@ -21,6 +21,9 @@ head(data)
 colnames(data)[12] <- "percent.GC"
 #bin data into 5
 data$GC.binned <- cut(data$percent.GC, 5)
+data$Start.binned <-cut(data$start, 5)
 #plot
 ggplot(data) + geom_bar(aes(x = GC.binned))
+#plot
+ggplot(data) + geom_bar(aes(x = Start.binned))
 ```
